@@ -294,21 +294,24 @@ section {
   gap: 2rem;
   margin-top: 3rem;
 }
-.portfolio-item {
+#Project {
+  background-image: url(images/FolderClosed.png);
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
   position: relative;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.portfolio-item:hover {
+#Project:hover {
+  background-image: url(images/FolderOpen.png);
   transform: scale(1.05);
 }
-.portfolio-item img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-}
+
 .portfolio-overlay {
   position: absolute;
   top: 0;
