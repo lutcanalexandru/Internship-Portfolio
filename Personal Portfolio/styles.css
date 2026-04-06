@@ -219,24 +219,49 @@ section {
 }
 .about-image {
   position: relative;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
-.about-image img {
+.face-image {
   width: 100%;
   height: 400px;
   object-fit: cover;
 }
-.about-text h3 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #2c3e50;
+.polaroid-frame {
+  position: absolute;
+  top: -10%;
+  left: -4%;
+  width: 400px;
+  height: 480px;
 }
-.about-text p {
-  margin-bottom: 1.5rem;
-  font-size: 1.1rem;
-  line-height: 1.8;
+.frame-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.about-text {
+  position: relative;
+  height: 500px;
+  max-width: 714px;
+}
+.about-me {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  height: 460px;
+  width: 710px;
+  align-items: content;
+}
+.about-text-image {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 480px;
+  width: 710px;
+  background-repeat: no-repeat;
+}
+.paper-image {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
 }
 .skills {
   display: flex;
@@ -289,10 +314,14 @@ section {
   background: #f8f9fa;
 }
 .portfolio-grid {
+  position: relative;
+
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.2rem;
   margin-top: 3rem;
+  background-image: url(/images/Office_Drawer.jpg);
+  background-repeat: no-repeat;
 }
 #Project {
   background-image: url(images/FolderClosed.png);
@@ -313,7 +342,7 @@ section {
 }
 
 .portfolio-overlay {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
@@ -336,7 +365,6 @@ section {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
-
 /* Footer */
 footer {
   background: #322240;
