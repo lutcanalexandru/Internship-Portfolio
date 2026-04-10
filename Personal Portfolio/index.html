@@ -3,47 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lutcan Alexandru - 2D Artist & Game Developer</title>
-    <link
-      rel="stylesheet"
-      href="styles.css"
-    />
-    <style>
-
-    </style>
+    <title>Lutcan Alexandru - 2D Artist & Game Designer</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="mediaqueries.css">
   </head>
   <body>
     <!-- Header -->
-    <header>
-      <nav>
-        <a style="text-decoration: none;" href="index.html"><div class="logo">L.Alexandru</div></a>
+      <nav id="desktop-nav">
+        <a style="text-decoration: none;" href="index.html"><div class="logo">Lutcan Alexandru</div></a>
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contacts">Contacts</a></li>
         </ul>
-        <div class="mobile-menu">
-          <i class="fas fa-bars"></i>
-        </div>
-        <div class="mobile-dropdown">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#portfolio">Portfolio</a>
-        </div>
       </nav>
-    </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-      <img src="images/Sakura_Bg.gif" class="hero-bg" />
-      <div class="hero-content">
-        <h1>Lutcan Alexandru</h1>
-        <p>
-          Semester 4 Media/Game Design Student. Currently looking for an Internship and Valuable working experience!
-        </p>
-        <a href="#portfolio" class="cta-button">Check out my Projects!</a>
+      <nav id="hamburger-nav">
+        <a style="text-decoration: none;" href="index.html"><div class="logo">Lutcan Alexandru</div></a>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
+        </div>
       </div>
-    </section>
+      </nav>
 
     <!-- About Section -->
     <section id="about" class="about">
@@ -70,14 +61,10 @@
             </div>
             <div class="about-me">
             <h3>2D Artist + Game Designer</h3>
-            <p>
-                I'm Alexandru, currently a Semester 4 Media Design student within the Game Design profile. The things I enjoy the most
-                are: Designing/Developing Games and Visual Media (websites, UI/UX elements), Drawing and Creating 2D Assets and Concepts (character sketches/designs and animations). 
-                Looking for an Internship and hoping I can become a valuable member of your team! 
-            </p>
-            <p>
-              Here is a list of my skills:
-            </p>
+            <p> 
+              Hello, I'm Alexandru, an aspiring 2D Artist + Media Designer. ᕙ(⇀‸↼‶)ᕗ</p>
+              <p>Currently a Student at Fontys in Eindhoven. </p>
+            <p>Here is a list of my skills:</p>  
             <div class="skills">
               <span class="skill-tag">2D Drawing & Animation</span>
               <span class="skill-tag">HTML, CSS & JS</span>
@@ -94,7 +81,7 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
+    <section id="projects" class="portfolio">
       <div class="container">
         <h2 class="section-title">My Projects</h2>
         <div class="portfolio-grid">
@@ -146,8 +133,6 @@
       <p>&copy; 2026 Alexandru Lutcan. All Rights Reserved.</p>
     </footer>
 
-    <script>
-
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
