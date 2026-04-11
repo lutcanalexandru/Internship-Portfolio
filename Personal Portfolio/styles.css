@@ -215,7 +215,7 @@ section {
 }
 .section-title {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   margin-bottom: 3rem;
   color: #2c3e50;
   position: relative;
@@ -269,7 +269,7 @@ section {
 .about-me {
   position: absolute;
   top: 20%;
-  left: 10%;
+  left: 14%;
   height: 460px;
   width: 710px;
   align-items: content;
@@ -294,11 +294,11 @@ section {
   margin-top: 2rem;
 }
 .skill-tag {
-  background: #8048d4;
+  background: #7b3dd7;
   color: white;
   padding: 8px 16px;
   border-radius: 25px;
-  font-size: 0.9rem;
+  font-size: 1.4rem;
   font-weight: 500;
 }
 
@@ -331,6 +331,52 @@ section {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   color: #2c3e50;
+}
+
+.icon{
+  cursor: pointer;
+  height: 6rem;
+}
+
+/* Experience Section*/
+#experience{
+  position: relative;
+}
+
+.experience{
+  background: #f8f9fa;
+}
+
+.exp-containers{
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.exp-pos-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.exp-details-container{
+  justify-content: center;
+  flex-direction: column;
+}
+
+.exp-containers, .exp-details-container{
+  display: flex;
+  justify-content: center;
+}
+
+.details-container{
+  padding: 1.5rem;
+  flex: 1;
+}
+
+.exp-pic-container{
+  height: 380px;
+  width: 380px;
+  margin: auto 0;
 }
 
 /* Portfolio Section */
@@ -389,36 +435,53 @@ section {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
-/* Footer */
-footer {
-  background: #322240;
-  color: white;
-  text-align: center;
-  padding: 2rem 0;
-}
-.social-links {
+
+/* Contacts Section */
+#contacts{
   display: flex;
   justify-content: center;
-  gap: 1rem;
-  margin-bottom: 1rem;
+  flex-direction: column;
+  height: 40vh;
 }
-.social-links a {
+
+.contacts{
+    background: #f8f9fa;
+}
+
+.contact-info-upper-container{
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto;
+  padding: 0.5rem;
+}
+
+.contact-info-container{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  background: #7b3dd7;
-  color: white;
-  border-radius: 50%;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-.social-links a:hover {
-  background: #8542e8;
-  transform: translateY(-3px);
+  gap: 0.5rem;
+  margin: 0.5rem;
 }
 
+.contact-info-container p{
+    font-size: 2rem;
+}
+
+.contact-icon{
+  cursor: default;
+  height: 8rem;
+}
+
+/* Footer Section */
+footer{
+  background: #f8f9fa;;
+  height: 10vh;
+  margin: 0 1rem;
+}
+
+footer p{
+  text-align: center; 
+}
 /* Animations */
 @keyframes fadeInUp {
   from {

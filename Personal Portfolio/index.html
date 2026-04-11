@@ -13,7 +13,8 @@
         <a style="text-decoration: none;" href="index.html"><div class="logo">Lutcan Alexandru</div></a>
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contacts">Contacts</a></li>
         </ul>
@@ -29,26 +30,27 @@
         </div>
         <div class="menu-links">
           <li><a href="#home" onclick="toggleMenu()">Home</a></li>
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About Me</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
         </div>
       </div>
       </nav>
 
-    <!-- About Section -->
+    <!-- Introduction Section -->
     <section id="about" class="about">
       <div class="container">
-        <h2 class="section-title">About Me</h2>
+        <h2 class="section-title">Who am I?</h2>
         <div class="about-content">
           <div class="about-image">
             <img class="face-image"
-              src="images/Lutcan Alexandru.jpg"
+              src="./images/Lutcan Alexandru.jpg"
               alt="Alexandru Lutcan"
             />
             <div class="polaroid-frame">
             <img class="frame-image"
-            src="images/Polaroid.png"
+            src="./images/Polaroid.png"
             alt="Polaroid"
             />
           </div>
@@ -56,27 +58,58 @@
           <div class="about-text">
             <div class="about-text-image">
             <img class="paper-image" 
-            src="images/Paper.png" 
+            src="./images/Paper.png" 
             alt="Paper">
             </div>
             <div class="about-me">
             <h3>2D Artist + Game Designer</h3>
             <p> 
-              Hello, I'm Alexandru, an aspiring 2D Artist + Media Designer. ᕙ(⇀‸↼‶)ᕗ</p>
-              <p>Currently a Student at Fontys in Eindhoven. </p>
-            <p>Here is a list of my skills:</p>  
+              Hello, I'm Alexandru, an aspiring 2D Artist + Media Designer. ᕙ(⇀‸↼‶)ᕗ<br>
+              Currently a Student at Fontys in Eindhoven.<br>
+              Here is a list of my skills:</p>  
             <div class="skills">
               <span class="skill-tag">2D Drawing & Animation</span>
               <span class="skill-tag">HTML, CSS & JS</span>
               <span class="skill-tag">Unity Game Engine</span>
               <span class="skill-tag">C#, C++</span>
-              <span class="skill-tag">Microsoft SQL Server (DB Management)</span>
               <span class="skill-tag">UI/UX Design</span>
-              <span class="skill-tag">Drawing Software (Clip Studio Paint & Photoshop)</span>
-            </div>
+              </div>
             </div>
         </div>
         </div>
+      </div>
+    </section>
+
+    <section id="experience" class="experience">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <div class="exp-pos-container">
+        <div class="exp-pic-container">
+          <img src="./images/Exp-Pic.png" alt="exp-picture">
+        </div>
+        <div class="exp-details-container">
+          <div class="exp-containers">
+            <div class="details-container">
+              <img src="./images/Exp-Icon.png" alt="experience-icon" class="icon">
+              <h3>Experience</h3>
+              <p>3 Years<br>Team-based Projects</p>
+            </div>
+            <div class="details-container">
+              <img src="./images/Edu-Icon.png" alt="education-icon" class="icon">
+              <h3>Education</h3>
+              <p>V Semesters<br>Fontys ICT (current)</p>
+            </div>
+            <div class="details-container">
+              <img src="./images/Art-Icon.png" alt="education-icon" class="icon">
+              <h3>2D Art Practice</h3>
+              <p>1.5 Years (for now)<br>Drawing & Concepting</p>
+            </div>
+          </div>
+          </div>
+        </div>
+          <div class="text-container">
+            <p>After obtaining my Highschool diploma, with an ICT specialization, I've enrolled to Fontys in Eindhoven. Multiple Projects and Semesters later, I am now looking for an Internship.</p>
+          </div>
       </div>
     </section>
 
@@ -129,8 +162,20 @@
       </div>
     </section>
 
+    <section id="contacts" class="contacts">
+      <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img src="./images/Mail.png" alt="email-icon" class="icon contact-icon">
+            <p><a href="mailto:alexandru.lutcan11@gmail.com">alexandru.lutcan11@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer>
-      <p>&copy; 2026 Alexandru Lutcan. All Rights Reserved.</p>
+      <p>Copyright &#169; 2026 Lutcan Alexandru. All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>
