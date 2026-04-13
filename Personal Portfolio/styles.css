@@ -61,7 +61,7 @@ a{
 a:hover{
   color: rgb(69, 69, 69);
   text-decoration: underline;
-  text-decoration-color: #8048d4;
+  text-decoration-color: #7b3dd7;
   text-underline-offset: 0.8rem;
   text-decoration-color: #262626;
 }
@@ -206,7 +206,7 @@ a:hover{
 
 /* Sections */
 section {
-  padding: 80px 0;
+  padding: 40px 0;
 }
 .container {
   max-width: 1200px;
@@ -283,8 +283,20 @@ section {
 }
 .sticker1{
   position: absolute;
-  right: -10%;
-  top: 50%;
+  right: -4%;
+  top: 60%;
+  transform: rotate(10deg);
+}
+.sticker2{
+  position: absolute;
+  left: 16%;
+  top: 6%;
+  transform: rotate(-10deg);
+}
+.sticker3{
+  position: absolute;
+  left: auto;
+  top: auto;
 }
 .paper-image {
     height: 100%;
@@ -298,7 +310,7 @@ section {
   margin-top: 2rem;
 }
 .skill-tag {
-  background: #7b3dd7;
+  background: #7b5da8;
   color: white;
   padding: 8px 16px;
   border-radius: 25px;
@@ -389,13 +401,13 @@ section {
 }
 .portfolio-grid {
   position: relative;
-
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
   margin-top: 3rem;
-  background-image: url(./images/Office_Drawer.jpg);
+  background-image: url(./images/Desk_Bg.png);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 #Project {
   background-image: url(./images/FolderClosed.png);
@@ -403,9 +415,9 @@ section {
   height: 250px;
   object-fit: cover;
   position: relative;
-  border-radius: 15px;
+  border-radius: 4px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 10, 0, 0.1);
   transition: all 0.3s ease;
   background-repeat: no-repeat;
   background-position: center;
