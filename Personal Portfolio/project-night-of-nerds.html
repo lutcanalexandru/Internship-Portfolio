@@ -1,40 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Night of the Nerds - Portfolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lutcan Alexandru - 2D Artist & Game Designer</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="project-styles.css">
+  </head>
+  <body>
+    <!-- Header -->
+      <nav id="desktop-nav">
+        <a style="text-decoration: none;" href="index.html"><div class="logo">Lutcan Alexandru</div></a>
+        <ul class="nav-links">
+          <li><a href="./index.html#home">Home</a></li>
+          <li><a href="./index.html#about">About Me</a></li>
+          <li><a href="./index.html#experience">Experience</a></li>
+          <li><a href="./index.html#projects">Projects</a></li>
+          <li><a href="./index.html#contacts">Contacts</a></li>
+        </ul>
+      </nav>
 
-  <link rel="stylesheet" href="project-styles.css" />
-</head>
-
-<body>
-
-  <!-- Header -->
-  <header>
-    <nav>
-      <a style="text-decoration: none;" href="index.html"><div class="logo">L.Alexandru</div></a>
-      <ul class="nav-links">
-        <li><a href="index.html#home">Home</a></li>
-        <li><a href="index.html#about">About</a></li>
-        <li><a href="index.html#portfolio">Portfolio</a></li>
-      </ul>
-      <div class="mobile-menu">
-        <i class="fas fa-bars"></i>
+      <nav id="hamburger-nav">
+        <a style="text-decoration: none;" href="index.html"><div class="logo">Lutcan Alexandru</div></a>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="./index.html#home" onclick="toggleMenu()">Home</a></li>
+          <li><a href="./index.html#about" onclick="toggleMenu()">About Me</a></li>
+          <li><a href="./index.html#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="./index.html#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="./index.html#contacts" onclick="toggleMenu()">Contacts</a></li>
+        </div>
       </div>
-      <div class="mobile-dropdown">
-        <a href="index.html#home">Home</a>
-        <a href="index.html#about">About</a>
-        <a href="index.html#portfolio">Portfolio</a>
-      </div>
-    </nav>
-  </header>
+      </nav>
 
+      
   <!-- Project Title Banner -->
-  <section class="project-hero" style="  background-color: #7b3dd7; opacity: 0.8;">
+    <h2 class="section-title">Night of the Nerds App for Teenagers</h2>
+    <section class="project">
+    <div class="container">
     <div class="project-hero-content">
-      <h1>'Night of the Nerds' WebApp</h1>
       <p>We had to develop a Web Application with the goal of Motivating young people (13 - 18 y.o.) to Socialize more.</p>
+    </div>
     </div>
   </section>
 
@@ -81,11 +93,10 @@
 
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Alexandru Lutcan. All Rights Reserved.</p>
-  </footer>
+    <footer>
+      <p>Copyright &#169; 2026 Lutcan Alexandru. All Rights Reserved.</p>
+    </footer>
 
-  <script></script>
+    <script src="script.js"></script>
 </body>
 </html>
