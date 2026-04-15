@@ -66,6 +66,30 @@ a:hover{
   text-decoration-color: #262626;
 }
 
+a::after{
+  content: attr(data-tooltip);
+  font-size: 1.6rem;
+  position: relative;
+  text-decoration: none;
+  justify-content: center;
+  left: 4%;
+  bottom: 50%;
+  transform: translateX(-50%);
+  background-color: #f8f9fa;
+  color: #000000;
+  padding: 4px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-out;
+}
+
+a:hover::after{
+  opacity: 1;
+  visibility: visible;
+}
+
 /* Hamburger Menu */
 #hamburger-nav {
   display: none;
@@ -391,6 +415,9 @@ section {
   background-image: url(./images/Desk_Bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+.portfolio-link+a{
+  text-decoration: none;
 }
 #Project {
   background-image: url(./images/FolderClosed.png);
